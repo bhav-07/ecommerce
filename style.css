@@ -349,3 +349,34 @@ label{
 .galleryImg{
     width: 100%;
 }
+
+.newSeason{
+    display: flex;;
+}
+
+.nsItem{
+    flex:1;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nsImg{
+    height: 500px;
+    width: 100%;
+}
+
+.nsTitle{
+    font-size: 40px; 
+}
+
+.nsButton{
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+}
