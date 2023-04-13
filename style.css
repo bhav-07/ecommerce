@@ -98,6 +98,12 @@ nav{
 }
 
 .sliderPrice {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     position: absolute;
     top: 10%;
     left: 10%;
@@ -105,24 +111,31 @@ nav{
     font-weight: 300;
     text-align: center;
     color: white;
-    border: 1px solid gray;
+    border: 1px solid white;
     z-index: 1;
   }
 .buyButton{
     position: absolute;
     top: 50%;
     right: 10%;
-    font-size: 80px;
+    font-size: 70px;
+    transition: transform .5s;
     font-weight: 400;
     color: white;
     cursor: pointer;
-    background-color: black;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     z-index: 1;
 }
 
 .buyButton:hover{
-    background-color: white;
-    color: black;
+    /* background-color: white;
+    color: black; */
+    transform: scale(1.1);
 }
 .sliderItem:nth-child(1) .sliderBg{
     background-color: #369e62;
