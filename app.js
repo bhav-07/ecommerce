@@ -97,5 +97,45 @@ menuItems.forEach((item,index)=>{
 
         //change the choosen product
         choosenProduct=products[index]
-    })
+
+        //change the text 
+        currProductTitle.textContent=choosenProduct.title
+        currProductPrice.textContent="$"+choosenProduct.price
+        currProductImg.src=choosenProduct.colors[0].img
+
+        currProductColor.forEach((color,index)=>{
+          color.style.backgroudColor=choosenProduct.colors[index].code;
+          
+        });
+    });
+});
+
+currProductColor.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currProductImg.src = choosenProduct.colors[index].img;
+  });
+});
+
+currProductSize.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currProductSize.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
+  });
+});
+
+const productButton= document.querySelector(".productButton");
+const payment= document.querySelector(".payment");
+const close= document.querySelector(".close");
+
+productButton.addEventListener("click",()=>{
+  payment.style.display="flex"
 })
+
+close.addEventListener("click",()=>{
+payment.style.display="none"
+})
+
